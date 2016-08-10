@@ -22,14 +22,12 @@
 # Body
 
 
-def avoids():
+def avoids(word, prohibited_letters):
     """ return True if word NOT forbidden"""
-    ...
 
 
-def forbidden_prompt():
+def forbidden_prompt(list_of_words):
     """ print count of words NOT forbidden by input"""
-    ...
 
 
 def forbidden_param():

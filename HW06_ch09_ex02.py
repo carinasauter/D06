@@ -16,9 +16,26 @@
 # Body
 
 
+def has_no_e(word):
+    if "e" in word or "E" in word:
+        return False
+    else:
+        return True
+
+
+def print_no_e(list):
+    count = 0
+    for element in list:
+        if has_no_e(element):
+            print(element)
+            count += 1
+    percentage = count / len(list)
+    print("The percentage of words not containing an 'e' in this list is: " +
+          str(percentage * 100) + "%")
+
+
 ##############################################################################
 def main():
-    pass  # Call your function(s) here.
-
+    print_no_e(["abc", "jabber", "does", "fun", "Eat"])
 if __name__ == '__main__':
     main()
